@@ -1,0 +1,66 @@
+@media only screen and (max-width: 767.98px) { 
+    .item-why-section{
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    #map{
+        min-height: 300px;
+    }
+
+    .about-section{
+        text-align: center;
+    }
+
+    .about-section h1::after{
+        margin: auto;
+    }
+
+    .article-section .card{
+        margin-bottom: 45px;
+    }
+
+    .contact-section .form-contact form{
+        width: 100%;
+    }
+
+    .hero-section .img-section{
+        margin-top: 50px;
+    }
+
+    .navbar ul.navbar-custom{
+        padding: 30px;
+        box-shadow: 5px 10px 10px #00000013;
+        margin-top: 20px;
+    }
+
+    .navbar.bg-purple{
+        background-color: white;
+    }
+
+    .navbar ul.navbar-nav li.nav-item a.nav-link{
+        color: #444444;
+    }
+
+    .service-section .p-custom{
+        width: 100%;
+    }
+
+    .testimoni-section{
+        text-align: center;
+    }
+    
+}
+
+@media only screen and (max-width: 1199px) {
+
+    .card-header img{
+        width: 170px;
+    }
+    
+    
+    img.website{
+        right: 340px;
+    }
+}

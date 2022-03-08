@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poly:ital@1&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    scroll-behavior: smooth;
+    background-color: #fbfbfb;
+}
+
+:after, :before{
+    box-sizing: border-box;
+}
+
+.btn-Primary{
+    font-family: 'Poppins', sans-serif;
+    background: #E08C28;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.btn-Primary:hover{
+    background-color: transparent;
+    color: #E08C28;
+    border-color: #E08C28;
+}
+
+.btn-Secondary{
+    font-family: 'Poppins', sans-serif;
+    background: transparent;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #E08C28;
+    border-radius: 8px;
+    border-color: #E08C28;
+    transition: 0.5s;
+}
+
+.btn-Secondary:hover{
+    background: #E08C28;
+    color: white;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    color: #312C51;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+
+h3{
+    font-size: 24px;
+    color: #333;
+    line-height: normal;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    color: #8b7474;
+    font-weight: 400;
+}
+
+span{
+    color: #E08C28;
+}
+
+.h1-custom{
+    line-height: 1.4;
+    color: #F0F0F0;
+}
+
+.line::before, .line::after{
+    position: absolute;
+    content: "";
+    background-color: #E08C28;
+}
+
+.line::before{
+    width: 100px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.line::after{
+    width: 45px;
+    height: 2px;
+    right: 50%;
+    bottom: -4px;
+    margin-right: -25px; 
+}
+
+.shape img{
+    position: absolute;
+}
+
+/* 
+Navbar 
+*/
+
+.navbar{
+    color: #716D6D;
+}
+
+.navbar.bg-purple{
+    background-color: transparent;
+    transition: background-color 200ms linear;
+}
+
+.navbar.bg-purple.scrolled {
+    background-color: white;
+    transition: background-color 200ms linear;
+}
+
+.navbar-toggler{
+    border:none;
+}
+
+.navbar .nav-item{
+    margin-right: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.navbar ul li.active > a,
+.navbar ul li > a:hover{
+    color: #E08C28 !important;
+}
+
+.navbar ul.navbar-nav li.nav-item a.nav-link{
+    color: #F0F0F0;
+}
+
+.navbar ul.navbar-nav li.nav-item a.scrolled{
+    color: #444444;
+}
+
+.navbar ul.navbar-nav li.nav-item a.dropdown-item{
+    color: #444444;
+}
+
+.navbar ul li .dropdown-menu{
+    border-radius: 8px;
+    border: none;
+    box-shadow: 5px 10px 10px #00000013;
+}
+
+.navbar ul li .dropdown-menu a:hover,
+.navbar ul li .dropdown-menu a.active{
+    background-color: #E08C28 !important;
+    color: white !important;
+}
+   
+.dropdown-toggle::after {
+    transition: transform 0.15s linear; 
+}
+
+.show.dropdown:hover .dropdown-toggle::after {
+    transform: translateY(3px);
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+/* 
+    Hero section 
+*/
+.hero-section{
+    padding-top: 210px;
+    background-color: #312C51;
+    padding-bottom: 210px;
+    background-image: url('../img/union.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-section h1{
+    width: 90%;   
+}
+
+.hero-section p{
+    width: 90%;
+    font-weight: 300;
+    color: #FCFBFB;
+}
+
+.card-header img{
+    position: absolute;
+    width: 190px;
+    box-shadow: 5px 10px 10px #00000013;
+    transition: 0.3s;
+}
+
+.card-header img:hover{
+    transition: 0.3s;
+    transform: scale(1.08);
+
+}
+
+img.website{
+    animation-name: animatePopUp;
+    animation-duration: 2s;
+    top: 130px;
+    right: 340px;
+}
+
+img.software{
+    animation-name: animatePopUp;
+    animation-duration: 1s;
+    top: 0px;
+    right: 140px;
+}
+
+img.service{
+    animation-name: animatePopUp;
+    animation-duration: 3s;
+    top: 180px;
+    right: 0px;
+}
+
+
+/* 
+    Why section 
+*/
+
+.why-section{
+    margin-top: 190px;
+    height: auto;
+}
+
+.why-section .container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.why-section img{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.why-section img:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.why-section .shape img{
+    top: 800px;
+    right: 0px;
+}
+
+.why-section .shape img:hover{
+    transform: scale(1.0);
+    cursor: auto;
+}
+
+/* 
+    service-section 
+*/
+
+/* .service-section{
+    margin-top: 210px;
+}
+
+.service-section h1{
+    font-size: 30px;
+}
+
+.service-section .item-service{
+    margin-top: 50px;
+    width: 180px;
+}
+
+.service-section .card{
+    padding: 15px;
+    border: none;
+    transition: 0.3s;
+}
+
+.service-section .card:hover{
+    transition: 0.3s;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1);
+    transform: scale(1.01);
+}
+
+.service-section .card p{
+    font-weight: 600;
+}
+
+.service-section .card .item{   
+    color: #95A5A5;
+} */
+
+.service-section{
+    margin-top: 190px;
+}
+
+.service-section .card{
+    border-radius: 8px;
+    background-color:white;
+    border: none;
+    margin-top: 50px;
+}
+
+.service-section .card h1{
+    line-height:26px;
+    font-size: 16px;
+    font-weight: 600px;
+}
+
+.service-section .p-custom{
+    font-size: 16px;
+    font-weight: 600px;
+    margin: auto;
+    width: 60%;
+}
+
+.service-section .card{
+    z-index: 99;
+}
+
+.service-section .card:hover{
+    transition: 0.3s;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1);
+    transform: scale(1.01);
+}
+
+.service-section a img{
+    transition: transform 0.15s linear; 
+}
+
+.service-section a img:hover{
+    transition: transform 0.15s linear; 
+    transform: translateX(5px);
+}
+
+.service-section .shape img{
+    top: 1680px;
+}
+
+
+/* 
+    About section
+*/
+.about-section{
+    margin-top: 190px;
+}
+
+.about-section h1::after{
+    background: #E08C28;
+    width: 45px;
+    height: 2px;
+    content: "";
+    display: block;
+    position: relative;
+    top: 12px;
+}
+
+/* 
+    Artikel section
+*/
+.article-section{
+    margin-top: 190px;
+}
+
+.article-section h1::after{
+    background: #E08C28;
+    width: 45px;
+    height: 2px;
+    content: "";
+    display: block;
+    position: relative;
+    top: 12px;
+}
+
+/* 
+    Contact section
+*/
+.contact-section{
+    margin-top: 100px;
+}
+
+.contact-section .p-custom{
+    color: black !important;
+    width: 70%;
+    margin: auto;
+}
+
+.contact-section .contact-information{
+    padding-bottom: 60px;
+    margin-top: 15px;
+    margin-bottom: 70px;
+}
+
+.contact-section .contact-information a img{
+    transition: 0.3s;
+}
+
+.contact-section .contact-information a img:hover{
+    transition: 0.3s;
+    transform: scale(1.08);
+}
+
+.contact-section .form-contact form{
+    width: 75%;
+    margin: auto;
+}
+
+.contact-section .form-contact button {
+    top: 0;
+    right: 0;
+}
+
+/* 
+    Add section
+*/
+
+.add-section{
+    margin-top: 190px;
+    text-align: center;
+    height: auto;
+}
+
+.parallax{
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .7)), url("../img/home_01.png");
+    min-height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.add-section .container{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.add-section h1{
+    color: white;
+}
+
+.add-section p{
+    color: white;
+}
+
+/* 
+    Testimoni section
+*/
+
+.testimoni-section{
+    margin-top: 190px;
+}
+
+.testimoni-section img{
+    width: 80%;
+}
+
+.testimoni-section .carousel h1{
+    font-size: 58px;
+}
+
+.testimoni-section .p-custom{
+    font-size: 18px;
+    font-family: 'Poly', serif;
+}
+
+/* 
+    Footer section
+*/
+
+#map{
+    width: 100%;
+    height: 100%;
+}
+
+.footer-section{
+    margin-top: 190px;
+    background-color:#FFFFFF;
+}
+
+.footer-section .map-section{
+    padding: 0px;
+}
+
+.footer-section .info-section{
+    padding: 50px;
+}
+
+.footer-section .info-section a:hover{
+    text-decoration: none;
+}
+
+.footer-section .info-section a p{
+    transition: transform 0.15s linear; 
+}
+
+.footer-section .info-section a p:hover{
+    transition: transform 0.15s linear; 
+    transform: translateX(5px);
+    color: #E08C28;
+}
+
+.footer-section h1{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #444444;
+}
+
+.footer-section h1::after{
+    background: #E08C28;
+    width: 30px;
+    height: 4px;
+    content: "";
+    margin: 0;
+    display: block;
+    position: relative;
+    top: 7px;
+}
+
+.footer-section p{
+    font-weight: 300;
+    font-size: 18px;
+    color: #959595;
+}
+
+.cprt-footer{
+    background-color: #F0F0F0;
+    text-align: center;
+    padding: auto;
+}
+
+.cprt-footer p{
+    padding: 22px;
+}
+
+/* 
+    Jumbotron section
+*/
+
+.jumbotron-section{
+    height: auto;
+    width: 100%;
+    background: #312C51;
+    padding-top: 100px ;
+    background-image: url('../img/union.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron-section .text-jumbotron{
+    padding-top: 103px ;
+    padding-bottom: 103px ;
+    animation: bounceInDown 1.5s ease-in-out;
+}
+
+.jumbotron-section h1,
+.jumbotron-section p{
+    color: white;
+}
+
+/* 
+    Service page - content section
+*/
+.content-section{
+    margin-top: 170px;
+}
+
+.content-section p{
+    font-size: 14px;
+}
+
+.content-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.content-section ul li {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    box-shadow: 1px 1px 8px rgba(89, 82, 82, 0.2);
+    margin-bottom: 10px;
+    text-align: left;
+    padding: 0px 55px;
+    border-radius: 50px;
+    background: #fff;
+}
+
+.content-section ul li:hover {
+    background: #312C51;
+    color: #fff;
+}
+
+.content-section ul li:hover a {
+    color: #fff;
+}
+
+.content-section ul li:hover:after {
+    color: #fff;
+}
+
+.content-section ul .service_active {
+    background: #312C51;
+}
+
+.content-section ul .service_active a {
+    color: #fff;
+}
+
+.content-section ul .service_active:after {
+    color: #fff;
+}
+
+.content-section ul li a {
+    font-size: 15px;
+    display: block;
+    position: relative;
+    z-index: 99;
+    color: #8b8b8b;
+}
+
+
